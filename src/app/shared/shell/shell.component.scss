@@ -1,0 +1,26 @@
+.drw {
+  width: auto;
+  height: 100%;
+  background: rgb(59, 59, 56)
+
+}
+
+.drw-content {
+  display: flex;
+  height: 100%;
+  width: 150px;
+
+}
+.drw-button {
+  color: white;
+}
+
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  color: tomato;
+}
+
+mat-grid-tile {
+  color: antiquewhite;
+  background-color: darksalmon;
+
+}

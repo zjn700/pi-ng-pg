@@ -1,0 +1,30 @@
+<mat-drawer-container class="drw" autosize="true" (window.resize)="onResize()">
+  <button mat-button color="primary" (click)="drawer.toggle()">=</button>
+  <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()">=</button>
+  <mat-drawer class="drw-content" #drawer mode="over" >
+    <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()" >=</button>
+    <mat-list >
+        <mat-list-item>
+        hm
+        </mat-list-item>
+        <mat-list-item>
+          ic
+        </mat-list-item>
+        <mat-list-item>
+          ok
+        </mat-list-item>
+        <mat-list-item>
+          gr
+        </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <mat-grid-list [cols]="cols" rowHeight="150px" >
+    <mat-grid-tile color="accent">1 {{wiw}} </mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+i
+
+  </mat-grid-list>
+</mat-drawer-container>
+
+<!-- <p>shell works!</p> -->
