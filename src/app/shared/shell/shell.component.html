@@ -19,7 +19,7 @@
     </mat-list>
   </mat-drawer>
 
-  <mat-grid-list [cols]="cols" rowHeight="150px" >
+  <mat-grid-list [cols]="cols" rowHeight="150px" (window:resize)="onResize()" >
     <mat-grid-tile color="accent">1 {{wiw}} </mat-grid-tile>
     <mat-grid-tile>2</mat-grid-tile>
 i
