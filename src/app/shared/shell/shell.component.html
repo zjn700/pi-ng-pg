@@ -1,6 +1,9 @@
+
 <mat-drawer-container class="drw" autosize="true" (window.resize)="onResize()">
-  <button mat-button color="primary" (click)="drawer.toggle()">=</button>
+  <mat-toolbar>
+  <button class="left-button" mat-button color="primary" (click)="drawer.toggle()">=</button>
   <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()">=</button>
+</mat-toolbar>
   <mat-drawer class="drw-content" #drawer mode="over" >
     <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()" >=</button>
     <mat-list >
@@ -16,15 +19,25 @@
         <mat-list-item>
           gr
         </mat-list-item>
+      <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button>
+      <button type="button" routerLink="/test" (click)="drawer.close()">Test</button>
+      <button type="button" routerLink="" (click)="drawer.close()">Home</button>
     </mat-list>
   </mat-drawer>
 
   <mat-grid-list [cols]="cols" rowHeight="200" (window:resize)="onResize()" >
     <mat-grid-tile color="accent">1 {{wiw}} </mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-i
+    <mat-grid-tile>
+      <mat-icon>menu</mat-icon>
+
+    <mat-grid-tile-footer><h3></h3></mat-grid-tile-footer>
+    </mat-grid-tile>
 
   </mat-grid-list>
+      <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button>
+  <ng-content></ng-content>
 </mat-drawer-container>
+
+      <!-- <button type="button" routerLink="/layout-test">Test</button> -->
 
 <!-- <p>shell works!</p> -->
