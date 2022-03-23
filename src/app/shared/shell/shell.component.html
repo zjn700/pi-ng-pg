@@ -8,34 +8,36 @@
     <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()" >=</button>
     <mat-list >
         <mat-list-item>
-        hm
+          <button mat-flat-button  routerLink="/layout-test" (click)="drawer.close()">Layout</button>
         </mat-list-item>
         <mat-list-item>
-          ic
+          <button mat-flat-button  routerLink="/test" (click)="drawer.close()">Test</button>
         </mat-list-item>
         <mat-list-item>
-          ok
+          <button mat-flat-button  routerLink="" (click)="drawer.close()">Home</button>
         </mat-list-item>
-        <mat-list-item>
-          gr
-        </mat-list-item>
-      <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button>
-      <button type="button" routerLink="/test" (click)="drawer.close()">Test</button>
-      <button type="button" routerLink="" (click)="drawer.close()">Home</button>
+        <!-- <mat-list-item> gr </mat-list-item> -->
+      <button mat-flat-button  routerLink="/layout-test" (click)="drawer.close()">Layout</button>
+      <button mat-flat-button  routerLink="/test" (click)="drawer.close()">Test</button>
+      <button mat-flat-button  routerLink="" (click)="drawer.close()">Home</button>
     </mat-list>
   </mat-drawer>
 
   <mat-grid-list [cols]="cols" rowHeight="200" (window:resize)="onResize()" >
     <mat-grid-tile color="accent">1 {{wiw}} </mat-grid-tile>
     <mat-grid-tile>
-      <mat-icon>menu</mat-icon>
+      <!-- <mat-icon>menu</mat-icon> -->
+           <ng-content></ng-content>
 
-    <mat-grid-tile-footer><h3></h3></mat-grid-tile-footer>
+      <mat-grid-tile-footer>
+       <h3>
+           <!-- <ng-content></ng-content> -->
+       </h3>
+      </mat-grid-tile-footer>
     </mat-grid-tile>
 
   </mat-grid-list>
-      <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button>
-  <ng-content></ng-content>
+      <!-- <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button> -->
 </mat-drawer-container>
 
       <!-- <button type="button" routerLink="/layout-test">Test</button> -->
