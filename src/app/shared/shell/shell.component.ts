@@ -14,10 +14,10 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class ShellComponent implements OnInit {
   @HostListener('window.resize', ['$event'])
   onResize() {
-    console.log('eti');
+    // console.log('eti');
 
     this.wiw = window.outerWidth
-    console.log('wiw', window)
+    console.log('wiw', this.wiw)
     this.cols = (window.innerWidth < 500) ? 1 : 2;
   }
   @HostListener('click')
