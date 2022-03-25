@@ -22,21 +22,21 @@
       <button mat-flat-button  routerLink="" (click)="drawer.close()">Home</button>
     </mat-list>
   </mat-drawer>
+           <ng-content></ng-content>
 
-  <mat-grid-list [cols]="cols" rowHeight="200" (window:resize)="onResize()" >
+  <!-- <mat-grid-list [cols]="cols" rowHeight="200" (window:resize)="onResize()" >
     <mat-grid-tile color="accent">1 {{wiw}} </mat-grid-tile>
     <mat-grid-tile>
-      <!-- <mat-icon>menu</mat-icon> -->
+      <mat-icon>menu</mat-icon>
            <ng-content></ng-content>
 
       <mat-grid-tile-footer>
        <h3>
-           <!-- <ng-content></ng-content> -->
        </h3>
       </mat-grid-tile-footer>
     </mat-grid-tile>
 
-  </mat-grid-list>
+  </mat-grid-list> -->
       <!-- <button type="button" routerLink="/layout-test" (click)="drawer.close()">Layout</button> -->
 </mat-drawer-container>
 
