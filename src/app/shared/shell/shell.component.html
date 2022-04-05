@@ -1,9 +1,11 @@
 
-<mat-drawer-container class="drw" autosize="true" (window.resize)="onResize()">
-  <mat-toolbar>
-  <button class="left-button" mat-button color="primary" (click)="drawer.toggle()">=</button>
+<!-- <mat-toolbar class="top-toolbar"> <button class="left-button" mat-button color="primary" (click)="drawer.toggle()">=</button>
   <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()">=</button>
-</mat-toolbar>
+</mat-toolbar> -->
+<mat-drawer-container class="drw" autosize="true" (window.resize)="onResize()">
+  <mat-toolbar class="top-toolbar"> <button class="left-button" mat-button color="primary" (click)="drawer.toggle()">=</button>
+   <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()">=</button>
+  </mat-toolbar>
   <mat-drawer class="drw-content" #drawer mode="over" >
     <button class="drw-button" mat-flat-button color="accent" (click)="drawer.toggle()" >=</button>
     <mat-list >
